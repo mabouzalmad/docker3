@@ -1,7 +1,7 @@
-import calculator
-x= 2
-y= 4
-somme=calculator.addition(x,y)
-produit=calculator.multiplication(x,y)
-print("addition:",somme)
-print("multiplication",produit)
+from app import calculator
+
+def test_addition():
+    assert calculator.addition(5, 3) == 8
+
+def test_multiplication():
+    assert calculator.multiplication(4, 2) == 8
